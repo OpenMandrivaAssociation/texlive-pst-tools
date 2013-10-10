@@ -1,11 +1,12 @@
-# revision 25024
+# revision 27986
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pst-tools
-# catalog-date 2012-01-04 09:11:42 +0100
+# catalog-date 2012-10-16 22:55:53 +0200
 # catalog-license lppl
-# catalog-version 0.1
+# catalog-version 0.02
 Name:		texlive-pst-tools
-Version:	0.1
+Epoch:		1
+Version:	0.02
 Release:	1
 Summary:	PStricks support functions
 Group:		Publishing
@@ -33,6 +34,7 @@ related packages.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/dvips/pst-tools/pst-tools.pro
 %{_texmfdistdir}/tex/generic/pst-tools/pst-tools.tex
 %{_texmfdistdir}/tex/latex/pst-tools/pst-tools.sty
 %doc %{_texmfdistdir}/doc/generic/pst-tools/Changes
@@ -51,12 +53,4 @@ related packages.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 759031
-- texlive-pst-tools
-- texlive-pst-tools
-
+cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
