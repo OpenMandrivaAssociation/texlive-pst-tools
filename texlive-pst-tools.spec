@@ -1,12 +1,12 @@
-# revision 27986
+# revision 32002
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pst-tools
-# catalog-date 2012-10-16 22:55:53 +0200
+# catalog-date 2013-10-26 16:53:57 +0200
 # catalog-license lppl
-# catalog-version 0.02
+# catalog-version 0.04
 Name:		texlive-pst-tools
 Epoch:		1
-Version:	0.02
+Version:	0.04
 Release:	1
 Summary:	PStricks support functions
 Group:		Publishing
@@ -14,7 +14,6 @@ URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-tools
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-tools.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-tools.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-tools.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -42,15 +41,13 @@ related packages.
 %doc %{_texmfdistdir}/doc/generic/pst-tools/pst-tools-doc.bib
 %doc %{_texmfdistdir}/doc/generic/pst-tools/pst-tools-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pst-tools/pst-tools-doc.tex
-#- source
-%doc %{_texmfdistdir}/source/generic/pst-tools/Makefile
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a0 -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
