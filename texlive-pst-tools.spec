@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-pst-tools
 Version:	0.1
-Release:	1
+Release:	2
 Summary:	PStricks support functions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-tools
