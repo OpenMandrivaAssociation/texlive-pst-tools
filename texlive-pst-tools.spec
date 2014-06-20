@@ -1,13 +1,13 @@
-# revision 32002
+# revision 34067
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pst-tools
-# catalog-date 2013-10-26 16:53:57 +0200
+# catalog-date 2014-05-16 12:23:05 +0200
 # catalog-license lppl
-# catalog-version 0.04
+# catalog-version 0.05
 Name:		texlive-pst-tools
 Epoch:		1
-Version:	0.04
-Release:	6
+Version:	0.05
+Release:	1
 Summary:	PStricks support functions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-tools
