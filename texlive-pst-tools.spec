@@ -1,9 +1,3 @@
-# revision 34067
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pst-tools
-# catalog-date 2014-05-16 12:23:05 +0200
-# catalog-license lppl
-# catalog-version 0.05
 Name:		texlive-pst-tools
 Epoch:		1
 Version:	0.09b
@@ -33,14 +27,10 @@ related packages.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/dvips/pst-tools/pst-tools.pro
-%{_texmfdistdir}/tex/generic/pst-tools/pst-tools.tex
-%{_texmfdistdir}/tex/latex/pst-tools/pst-tools.sty
-%doc %{_texmfdistdir}/doc/generic/pst-tools/Changes
-%doc %{_texmfdistdir}/doc/generic/pst-tools/README
-%doc %{_texmfdistdir}/doc/generic/pst-tools/pst-tools-doc.bib
-%doc %{_texmfdistdir}/doc/generic/pst-tools/pst-tools-doc.pdf
-%doc %{_texmfdistdir}/doc/generic/pst-tools/pst-tools-doc.tex
+%{_texmfdistdir}/dvips/pst-tools
+%{_texmfdistdir}/tex/generic/pst-tools
+%{_texmfdistdir}/tex/latex/pst-tools
+%doc %{_texmfdistdir}/doc/generic/pst-tools
 
 #-----------------------------------------------------------------------
 %prep
