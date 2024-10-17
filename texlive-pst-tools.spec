@@ -4,7 +4,7 @@ Version:	60621
 Release:	2
 Summary:	PStricks support functions
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-tools
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-tools
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-tools.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-tools.doc.r%{version}.tar.xz
